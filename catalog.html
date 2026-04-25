@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMA — Крісло Arc</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+
+
+</head>
+<body>
+
+<div class="ambient ambient-1"></div>
+<div class="ambient ambient-2"></div>
+
+<nav>
+  <a href="index.html" class="logo">FOR<span>M</span>A</a>
+  <ul class="nav-links">
+    <li><a href="catalog.html">Каталог</a></li>
+    <li><a href="index.html#categories">Категорії</a></li>
+    <li><a href="index.html#about">Про нас</a></li>
+  </ul>
+  <a href="koshuk.html" class="nav-cta">Кошик (1)</a>
+</nav>
+
+<main class="product-wrapper">
+  
+  <div class="product-visual">
+    <div class="product-image-ring"></div>
+    <div class="product-image-ring" style="width: 580px; height: 580px; opacity: 0.4;"></div>
+    
+    <div style="position:absolute; bottom:40px; left:0; right:0; display:flex; justify-content:center; gap:200px; color:var(--muted); font-size:.5rem; letter-spacing:.2em;">
+      <span>W: 76cm</span><span>H: 82cm</span>
+    </div>
+
+    <!-- ВИПРАВЛЕННЯ 1: viewBox → viewbox (малі літери) -->
+    <div class="product-svg-wrap">
+        <svg width="420" height="440" viewbox="0 0 210 220" fill="none">
+            <ellipse cx="105" cy="208" rx="70" ry="9" fill="#C8A462" opacity="0.12"/>
+            <rect x="34" y="94" width="142" height="36" rx="6" fill="#1E1C18"/>
+            <rect x="46" y="28" width="118" height="72" rx="6" fill="#222018"/>
+            <rect x="34" y="22" width="142" height="13" rx="4" fill="#262320"/>
+            <rect x="34" y="22" width="142" height="2" rx="1" fill="#C8A462" opacity="0.35"/>
+            <rect x="18" y="82" width="22" height="60" rx="4" fill="#1A1815"/>
+            <rect x="170" y="82" width="22" height="60" rx="4" fill="#181614"/>
+            <rect x="44" y="128" width="12" height="78" rx="3" fill="#C8A462" opacity="0.65"/>
+            <rect x="154" y="128" width="12" height="78" rx="3" fill="#C8A462" opacity="0.55"/>
+          </svg>
+    </div>
+  </div>
+
+  <div class="product-info-panel">
+    
+    <div class="breadcrumbs">
+      <a href="#">Головна</a> / 
+      <a href="#">Каталог</a> / 
+      <a href="#">Крісла</a> / 
+      <span>Крісло Arc</span>
+    </div>
+
+    <span class="p-tag">Новинка</span>
+    
+    <h1 class="p-title">Крісло Arc</h1>
+    <div class="p-category">Артикул: AR-1002-DO · Дизайн: Андрій Коваль</div>
+    <div class="p-price">8 400 ₴</div>
+
+    <p class="p-desc">
+      Натхненне класичними формами середини століття. Arc поєднує ергономічність гнутої фанери зі сталевим і масивом деревини, створюючи форму, що обіймає тіло. Всі дерев'яні деталі просякнуті натуральними оліями.
+    </p>
+
+    <div class="swatches-wrap">
+      <span class="swatches-title">Оберіть породу дерева</span>
+      <div class="swatches-flex">
+        
+        <!-- ВИПРАВЛЕННЯ 2: checked → checked="checked" -->
+        <input type="radio" name="wood_color" id="color-oak" class="radio-color" checked="checked">
+        <label for="color-oak" class="label-color" title="Темний Дуб">
+          <span class="swatch-box bg-dark-oak"></span>
+        </label>
+
+        <input type="radio" name="wood_color" id="color-walnut" class="radio-color">
+        <label for="color-walnut" class="label-color" title="Американський Горіх">
+          <span class="swatch-box bg-walnut"></span>
+        </label>
+
+        <input type="radio" name="wood_color" id="color-ash" class="radio-color">
+        <label for="color-ash" class="label-color" title="Чорний Ясен">
+          <span class="swatch-box bg-ash"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="specs">
+      <!-- ВИПРАВЛЕННЯ 3: open → open="open" -->
+      <details open="open">
+        <summary>Характеристики</summary>
+        <div class="detail-content detail-list">
+          <div>
+            <p><span>Ширина:</span><span>76 см</span></p>
+            <p><span>Глибина:</span><span>82 см</span></p>
+            <p><span>Висота:</span><span>78 см</span></p>
+          </div>
+          <div>
+            <p><span>Посадка:</span><span>42 см</span></p>
+            <p><span>Вага:</span><span>14 кг</span></p>
+            <p><span>Макс. вага:</span><span>120 кг</span></p>
+          </div>
+        </div>
+      </details>
+      <details>
+        <summary>Матеріали та догляд</summary>
+        <div class="detail-content" style="display: block;">
+          Натуральний дуб/ясен або американський горіх (FSC-сертифікований). Захисне покриття олією та карнаубським воском. 
+          Протирати сухою, м'якою тканиною. Рекомендується наносити фірмове масло кожні 1-2 роки для збереження структури дерева.
+        </div>
+      </details>
+      <details>
+        <summary>Доставка і повернення</summary>
+        <div class="detail-content" style="display: block;">
+          Безкоштовна адресна доставка. Термін виробництва: 14-21 робочий день, оскільки виріб створюється майстрами індивідуально.<br><br>Повернення товару можливе протягом 14 днів у разі виявлення виробничих дефектів.
+        </div>
+      </details>
+    </div>
+
+    <div class="buy-panel">
+      <button class="btn-main"><span>До кошика — 8 400 ₴</span></button>
+    </div>
+
+  </div>
+</main>
+
+<section id="similar">
+  <div class="section-header">
+    <div>
+      <p class="section-label">Доповніть інтер'єр</p>
+      <h2 class="section-title">Схожі вироби</h2>
+    </div>
+  </div>
+  
+  <div class="products-grid">
+    <div class="product-card">
+        <div class="product-img-wrap">
+          <!-- ВИПРАВЛЕННЯ 1: viewBox → viewbox -->
+          <svg width="240" height="200" viewbox="0 0 240 200" fill="none">
+            <ellipse cx="120" cy="188" rx="88" ry="9" fill="#C8A462" opacity="0.1"/>
+            <rect x="14" y="62" width="212" height="24" rx="5" fill="#1E1C18"/>
+            <rect x="14" y="62" width="212" height="2" rx="1" fill="#C8A462" opacity="0.3"/>
+            <path d="M14 80 Q14 90 120 94 Q226 90 226 80 L226 86 Q226 96 120 100 Q14 96 14 86Z" fill="#1A1815"/>
+            <rect x="28" y="86" width="15" height="100" rx="4" fill="#C8A462" opacity="0.6"/>
+            <rect x="197" y="86" width="15" height="100" rx="4" fill="#C8A462" opacity="0.5"/>
+            <rect x="82" y="46" width="32" height="16" rx="2" fill="#262320"/>
+          </svg>
+        </div>
+        <div class="product-overlay"><a href="#" class="overlay-btn-ghost">Переглянути</a></div>
+        <div class="product-info"><div><div class="product-name">Стіл Mono</div><div class="product-category">Столи · Чорний горіх</div></div><div class="product-price">14 900 ₴</div></div>
+      </div>
+  
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <!-- ВИПРАВЛЕННЯ 1: viewBox → viewbox -->
+          <svg width="180" height="230" viewbox="0 0 180 230" fill="none">
+            <ellipse cx="90" cy="218" rx="40" ry="8" fill="#C8A462" opacity="0.12"/>
+            <rect x="86" y="60" width="8" height="153" rx="3" fill="#2A2825"/>
+            <path d="M44 60 Q90 40 136 60 L122 98 Q90 82 58 98 Z" fill="#1E1C18"/>
+            <path d="M44 60 Q90 40 136 60 L130 66 Q90 48 50 66 Z" fill="#C8A462" opacity="0.3"/>
+            <circle cx="90" cy="112" r="8" fill="#262320"/>
+          </svg>
+        </div>
+        <div class="product-overlay"><a href="#" class="overlay-btn-ghost">Переглянути</a></div>
+        <div class="product-info"><div><div class="product-name">Торшер Lune</div><div class="product-category">Освітлення</div></div><div class="product-price">4 200 ₴</div></div>
+      </div>
+  
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <!-- ВИПРАВЛЕННЯ 1: viewBox → viewbox -->
+          <svg width="230" height="190" viewbox="0 0 230 190" fill="none">
+            <ellipse cx="115" cy="178" rx="84" ry="9" fill="#C8A462" opacity="0.1"/>
+            <ellipse cx="115" cy="68" rx="92" ry="24" fill="#222018"/>
+            <path d="M23 68 Q23 78 115 82 Q207 78 207 68 L207 74 Q207 84 115 88 Q23 84 23 74Z" fill="#1A1815"/>
+            <path d="M72 80 L56 168" stroke="#C8A462" stroke-width="7" stroke-linecap="round" opacity="0.7"/>
+            <path d="M158 80 L174 168" stroke="#C8A462" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+            <path d="M94 84 L88 168" stroke="#1E1C18" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="product-overlay"><a href="#" class="overlay-btn-ghost">Переглянути</a></div>
+        <div class="product-info"><div><div class="product-name">Столик Luna</div><div class="product-category">Журнальні</div></div><div class="product-price">6 600 ₴</div></div>
+      </div>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="logo" style="color:rgba(242,237,228,.5); font-size:1.2rem">FORMA</a>
+  <ul class="nav-links">
+    <li><a href="#">Доставка</a></li><li><a href="#">Шоурум</a></li><li><a href="#">Контакти</a></li>
+  </ul>
+</footer>
+
+</body>
+</html>
