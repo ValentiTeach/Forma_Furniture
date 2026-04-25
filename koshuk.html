@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORMA — Оформлення замовлення</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+ 
+<div class="ambient ambient-1"></div>
+ 
+<nav>
+  <a href="index.html" class="logo">FOR<span>M</span>A</a>
+  <div class="secure-badge">Безпечне з'єднання</div>
+</nav>
+ 
+<main class="checkout-wrap">
+  
+  <!-- ФОРМА (ЛІВОРУЧ) -->
+  <div class="checkout-form-panel">
+    <h1 class="page-title">Оформлення замовлення</h1>
+    
+    <form action="#" id="checkoutForm">
+        
+        <!-- Контакти -->
+        <div class="form-group">
+            <div class="group-title">1. Контактні дані</div>
+            <div class="input-row">
+                <!-- ВИПРАВЛЕННЯ: required → required="required" -->
+                <input type="text" class="f-input" placeholder="Ім'я та Прізвище" required="required">
+                <input type="tel" class="f-input" placeholder="+38 (000) 000-00-00" required="required">
+            </div>
+            <div class="input-row full">
+                <input type="email" class="f-input" placeholder="Ваш Email (для надсилання квитанції)">
+            </div>
+        </div>
+ 
+        <!-- Доставка -->
+        <div class="form-group css-tabs-container">
+            <div class="group-title">2. Спосіб доставки</div>
+            
+            <!-- ВИПРАВЛЕННЯ: checked → checked="checked" -->
+            <input type="radio" id="del-method-1" name="delivery_type" class="css-tab-radios" checked="checked">
+            <input type="radio" id="del-method-2" name="delivery_type" class="css-tab-radios">
+ 
+            <div class="tab-labels">
+                <label for="del-method-1" class="t-label">Адресна Доставка</label>
+                <label for="del-method-2" class="t-label">Самовивіз із шоуруму</label>
+            </div>
+ 
+            <div class="tab-content" id="content-1">
+                <div class="input-row full" style="margin-bottom: 1.5rem;">
+                    <!-- ВИПРАВЛЕННЯ: required="required", disabled="disabled", selected="selected" -->
+                    <select class="f-input" style="appearance: none; cursor: pointer;" required="required">
+                        <option value="" disabled="disabled" selected="selected">Оберіть Місто...</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="lviv">Львів</option>
+                        <option value="dnipro">Дніпро</option>
+                        <option value="odesa">Одеса</option>
+                    </select>
+                </div>
+                <div class="input-row full" style="margin-bottom:0">
+                    <input type="text" class="f-input" placeholder="Вулиця, Будинок, Квартира" required="required">
+                </div>
+                <p style="margin-top:1.2rem; font-size:.65rem; color:var(--mid)">
+                    * Безкоштовно для замовлень від 15 000 грн. Кур'єр підніме на ваш поверх.
+                </p>
+            </div>
+ 
+            <div class="tab-content" id="content-2">
+                <p style="font-size: .8rem; color: var(--cream); line-height: 1.8;">
+                    <strong>Адреса нашого концепт-стору:</strong><br>
+                    м. Київ, вул. Дизайнерська 14-Б.<br><br>
+                    <span style="color:var(--muted)">Години роботи: Пн-Нд з 11:00 до 20:00. <br>Ваше замовлення чекатиме вас відразу після сповіщення про готовність.</span>
+                </p>
+            </div>
+        </div>
+ 
+        <!-- Оплата -->
+        <div class="form-group" style="margin-bottom: 0;">
+            <div class="group-title">3. Метод Оплати</div>
+            <div class="radio-list">
+                <label class="custom-radio">
+                    <!-- ВИПРАВЛЕННЯ: checked → checked="checked" -->
+                    <input type="radio" name="payment_method" value="card" checked="checked">
+                    <span class="radio-mark"></span>
+                    <span class="radio-text">Оплата карткою (Visa / MasterCard / ApplePay)</span>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="payment_method" value="parts">
+                    <span class="radio-mark"></span>
+                    <span class="radio-text">Оплата частинами (від МоноБанку та Привату)</span>
+                </label>
+                <label class="custom-radio">
+                    <input type="radio" name="payment_method" value="cash">
+                    <span class="radio-mark"></span>
+                    <span class="radio-text">Передплата 50% / Готівкою при отриманні</span>
+                </label>
+            </div>
+        </div>
+    </form>
+  </div>
+ 
+  <!-- SUMMARY КОШИКА (ПРАВОРУЧ) -->
+  <div class="checkout-summary-panel">
+    <h2 class="summary-title">Ваше замовлення</h2>
+    
+    <div class="cart-item">
+        <div class="ci-visual">
+            <!-- ВИПРАВЛЕННЯ: viewBox → viewbox -->
+            <svg width="105" height="110" viewbox="0 0 210 220" fill="none">
+                <ellipse cx="105" cy="208" rx="70" ry="9" fill="#C8A462" opacity="0.15"/>
+                <rect x="34" y="94" width="142" height="36" rx="6" fill="#1E1C18"/>
+                <rect x="46" y="28" width="118" height="72" rx="6" fill="#222018"/>
+                <rect x="34" y="22" width="142" height="13" rx="4" fill="#262320"/>
+                <rect x="34" y="22" width="142" height="2" rx="1" fill="#C8A462" opacity="0.4"/>
+                <rect x="18" y="82" width="22" height="60" rx="4" fill="#1A1815"/>
+                <rect x="170" y="82" width="22" height="60" rx="4" fill="#181614"/>
+                <rect x="44" y="128" width="12" height="78" rx="3" fill="#C8A462" opacity="0.8"/>
+                <rect x="154" y="128" width="12" height="78" rx="3" fill="#C8A462" opacity="0.6"/>
+            </svg>
+        </div>
+        <div class="ci-details">
+            <div class="ci-name">Крісло Arc</div>
+            <div class="ci-variant">Колір: Темний Дуб</div>
+            <div class="ci-bottom">
+                <select style="background:var(--bg); color:var(--mid); border:1px solid var(--border); padding:.2rem .5rem; outline:none; border-radius:3px; appearance:none;">
+                    <option>1 шт.</option>
+                    <option>2 шт.</option>
+                    <option>3 шт.</option>
+                </select>
+                <div class="ci-price">8 400 ₴</div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="promo-box">
+        <input type="text" class="promo-input" placeholder="Маєте промокод?">
+        <button type="button" class="btn-promo">Застосувати</button>
+    </div>
+ 
+    <div>
+        <div class="total-line">
+            <span>Сума товарів</span>
+            <span>8 400 ₴</span>
+        </div>
+        <div class="total-line">
+            <span>Знижка промокоду</span>
+            <span style="color:var(--muted)">0 ₴</span>
+        </div>
+        <div class="total-line">
+            <span>Доставка (збирається вручну)</span>
+            <span style="color:var(--gold2)">Очікує розрахунку</span>
+        </div>
+        <div class="total-line final">
+            <span>Всього до сплати</span>
+            <span>8 400 ₴</span>
+        </div>
+    </div>
+ 
+    <button class="btn-submit" type="submit" form="checkoutForm">
+        <span>Підтвердити та перейти до оплати</span>
+    </button>
+  </div>
+ 
+</main>
+ 
+<footer>
+    <span>© 2025 FORMA Furniture</span>
+    <span><a href="#">Умови угоди</a> &nbsp; | &nbsp; <a href="#">Політика конфіденційності</a></span>
+</footer>
+ 
+</body>
+</html>
+ 
